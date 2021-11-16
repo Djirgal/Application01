@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,45 +13,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_text"
-        android:textColor="@color/purple_500"
-        android:layout_marginLeft="10dp"/>
+        android:textColor="@color/purple_500" />
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:autofillHints="@string/phoneHint"
-        android:hint="@string/phoneHint"
-        android:textColorHint="@color/cardview_shadow_start_color"
         android:gravity="center"
-        />
+        android:hint="@string/hint_phone"
+        android:autofillHints="phone"
+        android:inputType="phone"
+        android:textColorHint="@color/teal_200" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="160dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button1_text"
-        />
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/button1_text" />
 
     <Switch
         android:id="@+id/sw1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/switch_text"
-        android:textColor="@color/purple_200"
+        android:layout_marginTop="15dp"
         android:checked="false"
         android:hint="@string/cb_terms"
+        android:text="@string/switch_text"
+        android:textColor="@color/purple_200"
         android:textColorHint="@color/material_on_surface_disabled"
-        />
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <CheckBox
         android:id="@+id/cb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:hint="@string/cb_terms"
-        android:textColorHint="@color/material_on_surface_disabled"
-        />
+        android:textColorHint="@color/material_on_surface_disabled" />
+
     <CheckBox
         android:id="@+id/cb2"
         android:layout_width="wrap_content"
@@ -65,8 +66,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:textOff="@string/tb_no"
-        android:textOn="@string/tb_yes"
         android:textColor="@color/purple_500"
-        />
+        android:textOff="@string/tb_no"
+        android:textOn="@string/tb_yes" />
+
+    <CalendarView
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
 </LinearLayout>

@@ -2,16 +2,20 @@
     <string name="app_name">Application01</string>
     <string name="tv_text">Please, enter your contact number:</string>
     <string name="button1_text">Push me softly</string>
-    <string name="phoneHint">+7(xxx)xxx-xx-xx</string>
+    <string name="hint_phone">+7(xxx)xxx-xx-xx</string>
     <string name="switch_text">Yes, I want to receive sms</string>
     <string name="cb_terms">Agree with terms and conditions</string>
     <string name="cb_terms2">Agree to receive calls</string>
-    <string name="hint_text">Text</string>
+    <string name="text_welcome">Here is the list of EditText fields</string>
+
+    <string name="hint_text">Enter your greeting text here</string>
     <string name="hint_name">Your name</string>
-    <string name="hint_number">Some number</string>
+    <string name="hint_number">Your age</string>
     <string name="hint_pass">Your password</string>
     <string name="hint_email">Your Email</string>
     <string name="tb_no">No</string>
     <string name="tb_yes">Yes</string>
-    <string name="tb_hint">Smth else</string>
+    <string name="hint_smth">Write here something else</string>
+
+
 </resources>
